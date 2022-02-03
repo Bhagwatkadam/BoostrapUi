@@ -22,6 +22,8 @@ import { TemplateFormComponent } from './template-form/template-form.component';
 import { CounterComponent } from './counter/counter.component';
 import { EmpComponent } from './emp/emp.component';
 import { SearchPipe } from './search.pipe';
+import { ProductlistComponent } from './productlist/productlist.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 // import { MypipePipe } from './mypipe.pipe';
 
 // import { StoreModule } from '@ngrx/store';
@@ -47,6 +49,8 @@ import { SearchPipe } from './search.pipe';
     CounterComponent,
     EmpComponent,
     SearchPipe,
+    ProductlistComponent,
+    ProductDetailComponent,
     
     // MypipePipe
   ],

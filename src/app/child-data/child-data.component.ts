@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ShareService } from '../share.service';
 
 @Component({
   selector: 'app-child-data',
@@ -12,9 +13,15 @@ export class ChildDataComponent implements OnInit {
   @Input() xyz: any;
   @Output() childDataByEvent = new EventEmitter();
 
+
+ 
   childData = { name: 'Sup', age: 80 };
 
-  constructor() { }
+  constructor(private shareService: ShareService) { }
+
+  get shareServiceData(){
+    return this.shareService.getHelloMessage();
+  }
 
   ngOnInit(): void {
     this.childDataByEvent.emit("my Data Form Child");

@@ -11,7 +11,7 @@
     </tr>
     <tr *ngFor="let employee of employees | search: query">
         <td>{{employee.id}}</td>
-        <td>{{employee.employee_name}}</td>
+        <td><span (click="setData(employee.employee_name)")>{{employee.employee_name}}</span></td>
         <td>{{employee.employee_salary | number: ".2"}}</td>
         <td class="text-center" [ngClass]="{'bg-success':employee.employee_age <= 30, 'bg-danger':employee.employee_age > 50, 'bg-info':employee.employee_age > 30 && employee.employee_age <= 50 }">{{employee.employee_age}}</td>
         <td>{{employee.profile_image}}</td>

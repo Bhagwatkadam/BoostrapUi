@@ -11,38 +11,38 @@ export class AppComponent {
 
   title = 'BoostrapUi';
 
-  ngOnChanges() {
-    console.log("ChildComponent:OnChanges");
-  }
+  // ngOnChanges() {
+  //   console.log("ChildComponent:OnChanges");
+  // }
 
 
-  ngOnInit() {
-    console.log("ChildComponent:OnInit");
-  }
+  // ngOnInit() {
+  //   console.log("ChildComponent:OnInit");
+  // }
 
-  ngDoCheck() {
-    console.log("ChildComponent:DoCheck");
-  }
+  // ngDoCheck() {
+  //   console.log("ChildComponent:DoCheck");
+  // }
 
-  ngAfterContentInit() {
-    console.log("ChildComponent:AfterContentInit");
-  }
+  // ngAfterContentInit() {
+  //   console.log("ChildComponent:AfterContentInit");
+  // }
 
-  ngAfterContentChecked() {
-    console.log("ChildComponent:AfterContentChecked");
-  }
+  // ngAfterContentChecked() {
+  //   console.log("ChildComponent:AfterContentChecked");
+  // }
 
-  ngAfterViewInit() {
-    console.log("ChildComponent:AfterViewInit");
-  }
+  // ngAfterViewInit() {
+  //   console.log("ChildComponent:AfterViewInit");
+  // }
 
-  ngAfterViewChecked() {
-    console.log("ChildComponent:AfterViewChecked");
-  }
+  // ngAfterViewChecked() {
+  //   console.log("ChildComponent:AfterViewChecked");
+  // }
 
-  ngOnDestroy() {
-    console.log("ChildComponent:OnDestroy");
-  }
+  // ngOnDestroy() {
+  //   console.log("ChildComponent:OnDestroy");
+  // }
 
   callTest() {
     const observable = Observable.create((observer: any) => {

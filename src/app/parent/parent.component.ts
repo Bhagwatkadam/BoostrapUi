@@ -1,5 +1,6 @@
 import { AfterViewChecked, Component, OnInit, ViewChild } from '@angular/core';
 import { ChildDataComponent } from '../child-data/child-data.component';
+import { ShareService } from '../share.service';
 import { StudentService } from '../student.service';
 
 @Component({
@@ -11,23 +12,29 @@ export class ParentComponent implements OnInit, AfterViewChecked {
   pData = "g7trtyre6rfg ugtft7f gtf";
   arr = [1, 2, 4, 5, 7];
   childData = "";
-
   byViewGetData = "";
-
+  // shareServiceData = "";
   @ViewChild(ChildDataComponent, { static: false }) child: any;
   // @ViewChild(ChildDataComponent) childDataComponent!: ChildDataComponent;
 
-  constructor(private stud: StudentService ) { }
+  constructor(private stud: StudentService, private shareService: ShareService ) { 
+    console.log(document.getElementById("img"));
+  }
 
   ngOnInit(): void {
+  //  this.shareServiceData = this.shareService.getHelloMessage();
+  console.log(document.getElementById("img"));
+  }
 
+  get shareServiceData(){
+    return this.shareService.getHelloMessage();
   }
 
   ngAfterViewChecked(): void {
     setTimeout(() => {
       this.byViewGetData = this.child.childData;  
     });
-    
+
   }
 
   childByFun(e: any) {
@@ -37,8 +44,11 @@ export class ParentComponent implements OnInit, AfterViewChecked {
   }
 
   clickButton() {
-    this.child.byViewChildCall();
+    // this.child.byViewGetData();
+    this.shareService.setHelloMessage("set by paranet");
     // this.childDataComponent.byViewChildCall();
+    // this.shareServiceData = this.shareService.getHelloMessage();
   }
+  
 
 }

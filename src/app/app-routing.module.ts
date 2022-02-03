@@ -9,6 +9,8 @@ import { LayoutComponent } from './layout/layout.component';
 import { LocationComponent } from './location/location.component';
 import { LoginComponent } from './login/login.component';
 import { ParentComponent } from './parent/parent.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductlistComponent } from './productlist/productlist.component';
 import { ReactiveComponent } from './reactive/reactive.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
 
@@ -23,6 +25,8 @@ const routes: Routes = [
       { path: 'parent', component: ParentComponent },
       { path: 'reactive', component: ReactiveComponent },
       {path: 'emp', component: EmpComponent},
+      {path: 'productlist', component: ProductlistComponent},
+      {path: 'productlist/:id', component: ProductDetailComponent},
       { path: 'template-form', component: TemplateFormComponent }      
     ]
   },
