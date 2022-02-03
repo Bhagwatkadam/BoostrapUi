@@ -38,4 +38,14 @@
 	{path: 'productlist', component: ProductlistComponent},
     {path: 'productlist/:id', component: ProductDetailComponent},
 		
-	
+	====
+    git status
+    git add  src/app/product-detail/
+    git add .
+    git commit -m "router, share data."
+    git pull
+    git pull origin main
+    git push 
+    git push origin main
+    git checkout
+    git branch -b "mybranch" from origin main
