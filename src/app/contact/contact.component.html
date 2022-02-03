@@ -1,0 +1,14 @@
+<p>contact works!</p>
+<!-- {{data | json}} -->
+<table style="width: 100%;" border="1">
+    <tr>
+        <th>Name</th>
+        <th>Number</th>
+    </tr>
+    <tr *ngFor="let d of data; let i = index ">
+        <!-- {{i}} -->
+        <td *ngIf="i%2 == 0">{{d.name | lowercase}}</td>
+        <td *ngIf="i%2">{{d.name | uppercase}}</td>
+        <td>{{d.number}}</td>
+    </tr>
+</table>

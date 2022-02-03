@@ -1,0 +1,8 @@
+<div style="border: 1px solid red;">
+    <p>parent works!</p>
+    {{childData}}
+    <button (click)="clickButton()">clickButton </button>
+    {{byViewGetData | json}}
+</div>
+
+<app-child-data [abc]="pData" [xyz]="arr" (childDataByEvent)="childByFun($event)"></app-child-data>

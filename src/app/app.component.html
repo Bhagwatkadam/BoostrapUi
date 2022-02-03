@@ -1,0 +1,61 @@
+<router-outlet></router-outlet>
+
+
+<!-- <img [src]="ImageUrl">
+<button (click)="onUpdate($event)">Save</button>
+<input [(ngModel)]="name">
+
+<button [attr.aria-label]="help">help</button>
+
+<span [class.specialClass]="isSpecialClass">Special class</span>
+
+<button [style.color]="isSpecialClass ? 'blue' : 'black'">Click Me</button>
+
+<div [ngClass]=" flag ? 'primary' : 'secondary'"> sometext </div> -->
+
+<!-- <app-child>
+    <div> Child Component Details </div>
+</app-child>
+child.component.html =>
+<h1>Child Info</h1>
+<ng-content></ng-content> -->
+
+
+<!-- <div *ngIf="details" *ngFor="let info of details"> // Not able to user
+    {{ info.content }}
+</div>
+<ng-container *ngIf="details">
+    <div *ngFor="let info of details">
+        {{ info.content }}
+    </div>
+</ng-container> -->
+
+<!-- <ng-container *ngIf="condition then myTemplate else otherTemplate"></ng-container>
+<ng-template #myTemplate> if condition TRUE Some content... </ng-template>
+<ng-template #otherTemplate> if condition FALSE else Some content... </ng-template> -->
+
+<!-- 
+<ng-template #companyLogoTemplate>
+    <div class="companyLogo">
+        <img [src]="logoSourceUrl">
+        <label>The ACME company, {{employeeCount}} people working for you!</label>
+    </div>
+</ng-template>
+
+<div>
+    <ng-container *ngTemplateOutlet="companyLogoTemplate"></ng-container>
+    <h1>Company History</h1>
+    <div>{{companyHistory}}</div>
+</div>
+<form (ngSubmit)="onSubmit()">
+    <ng-container *ngTemplateOutlet="companyLogoTemplate"></ng-container>
+    <h1>User info</h1>
+    <label>Name:</label><input type="text" [(ngModel)]="userName" />
+    <label>Account ID:</label><input type="text" [(ngModel)]="accountId" />
+    <button>Submit</button>
+</form>
+<div class="footer">
+    <ng-container *ngTemplateOutlet="companyLogoTemplate"></ng-container>
+</div> -->
+
+

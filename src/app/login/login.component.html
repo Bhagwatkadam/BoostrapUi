@@ -1,0 +1,12 @@
+<p>login works!</p>
+<form (ngSubmit)="onsubmit()" #f="ngForm">
+    <input autocomplete="off" autofocus placeholder="Username" [(ngModel)]="myform.name" name="name" #name="ngModel" required  pattern="[A-Za-z]{3}">
+    <input type="password" placeholder="Password" [(ngModel)]="myform.password" name="password">
+    <button>Submit</button>
+</form>
+<h4>user name {{myform.name}}</h4>
+<!-- valid ={{f.valid}} <br>
+invalid ={{f.invalid}} <br>
+touch = {{f.touched}} <br>
+name valid ={{name.valid}}
+name touched ={{name.touched}} -->
