@@ -9,8 +9,10 @@ import { StudentService } from '../student.service';
   styleUrls: ['./parent.component.scss']
 })
 export class ParentComponent implements OnInit, AfterViewChecked {
+  tagData = "<h1> this tag form data </h1>"
   pData = "g7trtyre6rfg ugtft7f gtf";
   arr = [1, 2, 4, 5, 7];
+  obj = {name:"Sup"};
   childData = "";
   byViewGetData = "";
   // shareServiceData = "";

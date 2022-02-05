@@ -1,6 +1,5 @@
-import { Route } from '@angular/compiler/src/core';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import {  Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -11,12 +10,12 @@ import { Router } from '@angular/router';
 export class AboutComponent implements OnInit {
   dataVariable: any = new Date();
   
-  constructor(private router: Router, private route: Route) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     setInterval(() => {
       this.dataVariable = new Date();
-    }, 1000)
+    }, 1000) 
   }
 
 }

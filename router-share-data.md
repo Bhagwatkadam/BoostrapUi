@@ -49,3 +49,6 @@
     git push origin main
     git checkout
     git branch -b "mybranch" from origin main
+
+	git pull --tags origin main
+	git push origin main:main		
