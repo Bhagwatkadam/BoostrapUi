@@ -7,20 +7,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  myform: any = { name: '', password: '' };
-  constructor(private router: Router) { }
+  model: any ={};
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+
   }
-  
-  onsubmit() {
-    debugger;
-    if (this.myform.name != "a" || this.myform.password != "a") {
-      alert("user or password wrong");
+  onSubmit() {
+    debugger
+    if(this.model.UserName  == "" ||  this.model.UserName  == undefined){
       return
     }
-    sessionStorage.setItem('cerrentUser', this.myform.name);
+    if(this.model.Password == "" || this.model.Password == undefined){
+      return
+    }    
+    localStorage.setItem("userName",this.model.UserName);
     this.router.navigate(['home']);
+
   }
 
 }

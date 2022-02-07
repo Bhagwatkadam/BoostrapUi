@@ -4,17 +4,17 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
-  styles: [ ]
+  styleUrls: ['./nav.component.scss']
 })
-
-export class NavComponent  {
+export class NavComponent implements OnInit {
 
   constructor(private router: Router) { }
-  
-  logout( ){
-    this.router.navigateByUrl('login');
-    sessionStorage.clear();
+
+  ngOnInit(): void {
   }
-} 
+  logout() {
+    this.router.navigate(['login']);
+    localStorage.clear();
+  }
 
-
+}
