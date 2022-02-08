@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { AuthGuard } from './auth.guard';
+import { BootstrapGridComponent } from './bootstrap-grid/bootstrap-grid.component';
 import { CalculationComponent } from './calculation/calculation.component';
 import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './login/login.component';
 import { PostComponent } from './post/post.component';
 import { TableComponent } from './table/table.component';
-
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -20,6 +20,7 @@ const routes: Routes = [
       { path: 'calculation', component: CalculationComponent },
       { path: 'post', component: PostComponent },
       { path: 'table', component: TableComponent },
+      { path: 'grid', component: BootstrapGridComponent },
     ]
   },
   { path: '**', redirectTo: 'login' },

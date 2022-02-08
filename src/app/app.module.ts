@@ -13,6 +13,7 @@ import { CalculationComponent } from './calculation/calculation.component';
 import { PostComponent } from './post/post.component';
 import { FormsModule } from '@angular/forms';
 import { TableComponent } from './table/table.component';
+import { BootstrapGridComponent } from './bootstrap-grid/bootstrap-grid.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TableComponent } from './table/table.component';
     AboutComponent,
     CalculationComponent,
     PostComponent,
-    TableComponent
+    TableComponent,
+    BootstrapGridComponent
   ],
   imports: [
     BrowserModule,
