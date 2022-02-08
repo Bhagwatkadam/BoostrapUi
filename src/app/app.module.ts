@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { CalculationComponent } from './calculation/calculation.component';
 import { PostComponent } from './post/post.component';
 import { FormsModule } from '@angular/forms';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     AboutComponent,
     CalculationComponent,
-    PostComponent
+    PostComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

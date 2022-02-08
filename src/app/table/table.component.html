@@ -1,0 +1,76 @@
+<p>table works!</p>
+<h2> Component LCH </h2>
+
+<div *ngTemplateOutlet="myTem"></div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>First head</th>
+            <th> Secound head</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>11</td>
+            <td>
+                <table class="table table-bordered">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="first">First</th>
+                        <th class="middle"></th>
+                        <th class="last">Secound</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of items1; let i=index" [ngClass]="{'bg-success': i % 2, 'bg-warning': i % 2 == 0 }">
+                        <td class="first"> {{i}} {{item.first}}</td>
+                        <td class="middle"></td>
+                        <td class="last">{{item.secound}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="0 else myTem">
+    in side true condition
+</div>
+
+<app-about>
+    <h1> sdf dsf dsf dsf</h1>
+</app-about>
+
+<ng-template #myTem>
+    <h1>My temps</h1>
+</ng-template>

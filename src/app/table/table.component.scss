@@ -1,0 +1,20 @@
+thead {
+    .first, .last{
+        border-top:2px solid #333;
+        border-bottom:2px solid #333;
+    }
+}
+.first{
+    width: 47%;
+}
+.middle{
+    border: none;
+    width: 20px;
+}
+.last{
+    width: 47%;
+}
+
+table{
+    border-collapse: separate;
+}
