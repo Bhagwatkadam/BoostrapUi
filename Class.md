@@ -11,3 +11,10 @@
     Bootstrap button primary primary, secondary, success, info, warning, danger, dark, light, link , -lg, -sm, -block, btn-group,  btn-group-lg
 
 09-02-2022
+    encapsulation:ViewEncapsulation.ShadowDom // apply css child not added attribute selecter
+    encapsulation:ViewEncapsulation.none // apply all components not added attribute selecter
+    encapsulation:ViewEncapsulation.Emulated // Only apply it self added attribute
+    ::ng-deep .test-class // apply all components not added attribute selecter onpy particular class
+
+
+
